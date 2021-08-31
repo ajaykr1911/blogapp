@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Post{% endblock title %}
+{% block body %}
+
+<div class="post-border-outline">
+  <div class="posts-header">
+    <h2>Ajay's Blog</h2>
+  </div>
+
+  <div class="posts-row">
+    <div class="posts-leftcolumn">
+      <div class="posts-card">
+        <h1>{{pt.title}}</h1>
+        <h5>{{pt.created_at}}</h5>
+        <p>{{pt.body}}</p>
+      </div>
+    </div>
+  </div>
+
+
+  <a href="{% url 'posts' %}">
+    <button>Back</button>
+  </a>
+
+
+</div>
+
+
+{% endblock body %}

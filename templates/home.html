@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<div class="post-border-outline">
+<div class="posts-header">
+  <h2>Ajay's Blog</h2>
+</div>
+
+<div class="posts-row">
+  <div class="posts-leftcolumn">
+    {% for post in pts reversed %}
+    <div class="posts-card">
+      <a style="text-decoration: none; color: black;" href="{% url 'post' post.id %}">
+        <h2>{{post.title}}</h2>
+        <h5>{{post.created_at}}</h5>
+        <p>{{post.body|truncatewords:20}}</p>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+</div>
+
+{% endblock body %}

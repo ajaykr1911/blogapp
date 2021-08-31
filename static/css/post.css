@@ -1,0 +1,36 @@
+.post-border-outline{
+    font-family: Arial;
+    padding: 20px;
+    background: #f0e4e4;
+  }
+
+.posts-header {
+    padding: 2px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  .posts-leftcolumn {   
+    float: left;
+    width: 100%;
+  }
+  
+  .posts-card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  .posts-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 400) {
+    .posts-leftcolumn, .posts-rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }

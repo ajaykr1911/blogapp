@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(57, 97, 99);
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 8px 70px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav-area{
+    list-style: none;
+}
+
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav-area li a{
+    color: white;
+}
+
+.button-area{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: rgb(184, 174, 174);
+}
